@@ -5,7 +5,7 @@ function App() {
   const [transactions, setTransactions] = useState([]);
   const [aiResult, setAiResult] = useState(null);
 
-  const API = "http://localhost:5000";
+  const API = "https://ai-bookkeeping-dashboard.onrender.com";
 
   const fetchTransactions = async () => {
     const res = await fetch(`${API}/transactions`);
